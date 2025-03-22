@@ -52,11 +52,11 @@ textureLoader.load(matcapTextureURL, (matcapTexture) => {
 	const geometry = new THREE.TorusGeometry( 20, 6, 32, 100 ); 
     const material = new THREE.MeshMatcapMaterial({ matcap: matcapTexture });
 
-	for (let i = 0; i < 100; i++) {
+	for (let i = 0; i < 1000; i++) {
 		const torus = new THREE.Mesh( geometry, material ); scene.add( torus );
-		torus.position.x = (Math.random() - 0.5) * 500
-		torus.position.y = (Math.random() - 0.5) * 500
-		torus.position.z = (Math.random() - 0.5) * 500
+		torus.position.x = (Math.random() - 0.5) * 1000
+		torus.position.y = (Math.random() - 0.5) * 1000
+		torus.position.z = (Math.random() - 0.5) * 1000
 
 		torus.rotation.x = Math.random() * Math.PI
 		torus.rotation.y = Math.random() * Math.PI
