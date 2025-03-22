@@ -27,7 +27,7 @@ const loader = new FontLoader();
 const textureLoader = new THREE.TextureLoader();
 
 // URL to your matcap image
-const matcapTextureURL = 'matcap3.png';
+const matcapTextureURL = 'matcap.png';
 textureLoader.load(matcapTextureURL, (matcapTexture) => {
   loader.load('https://raw.githubusercontent.com/mrdoob/three.js/refs/heads/master/examples/fonts/helvetiker_regular.typeface.json', function(font) {
     const textGeometry = new TextGeometry('Mahmoud Khar Ast!!!', {
